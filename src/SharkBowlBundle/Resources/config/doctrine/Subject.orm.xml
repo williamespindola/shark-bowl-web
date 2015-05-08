@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="SharkBowlBundle\Entity\SubjectRepository" name="SharkBowlBundle\Entity\Subject">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="subject" type="string" column="subject" length="255"/>
+    <field name="eventId" type="integer" column="event_id"/>
+    <field name="created" type="datetime" column="created"/>
+    <field name="modified" type="datetime" column="modified"/>
+    <field name="userId" type="integer" column="user_id"/>
+    <field name="start" type="datetime" column="start"/>
+    <field name="discussionTime" type="time" column="discussion_time"/>
+    <field name="status" type="integer" column="status"/>
+    <field name="orderTalk" type="integer" column="order_talk"/>
+    <field name="orderUser" type="integer" column="order_user"/>
+  </entity>
+</doctrine-mapping>
