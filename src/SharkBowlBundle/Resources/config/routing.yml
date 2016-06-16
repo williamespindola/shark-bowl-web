@@ -1,8 +1,0 @@
-
-create:
-    path:     user
-    defaults: { _controller: SharkBowlBundle:User:create }
-
-edit:
-    path:     user/*
-    defaults: { _controller: SharkBowlBundle:User:edit }
