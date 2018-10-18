@@ -7,13 +7,37 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+## Technology
+Stuff we use:
+- **[Docker](https://docs.docker.com)** and **[Docker Compose](https://docs.docker.com/compose/)** to create our development and test environments.
+
 ## Install
 
-TODO
+### Change the host file on your computer
+
+The host file path is:
+
+#### On Mac
+`/private/etc/hosts`
+#### On Linux
+`/etc/hosts`
+#### On Windows
+`%systemroot%\system32\drivers\etc\hosts`
+
+Add this line to your host file
+`127.0.0.1 shark.bowl`
+
+### Clone the repository
+
+`git clone git@github.com:williamespindola/shark-bowl-web.git`
 
 ## Usage
 
-TODO
+### Run project
+
+`docker-compose up -d`
+
+Then access [shark.bowl:8080](http://shark.bowl:8080/)
 
 ## Change log
 
