@@ -1,0 +1,35 @@
+version: '2'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./src:/src
+            - ./site.conf:/etc/nginx/conf.d/site.conf
+        links:
+            - php
+
+    php:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./src:/src
+        links:
+            - mongodb
+        depends_on:
+            - mongodb
+
+    mongodb:
+        image: mongo:latest
+        environment:
+        - MONGO_DATA_DIR=/data/db
+        - MONGO_LOG_DIR=/dev/null
+        - MONGODB_USER="user" 
+        - MONGODB_PASS="pass"
+        volumes:
+        - ./data/:/data/
+        ports:
+            - 27017:27017
+        command: mongod --smallfiles --logpath=/dev/null # --quiet
