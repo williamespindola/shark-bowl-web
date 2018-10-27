@@ -40,12 +40,19 @@ Add this line to your host file
 
 `docker-compose up -d`
 
+
 Then access [shark.bowl:8080](http://shark.bowl:8080/)
 
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed
 recently.
+
+## Code Sniffer
+
+To run the PHPCS run the following command:
+
+`docker-compose run composer cs`
 
 ## Testing
 
