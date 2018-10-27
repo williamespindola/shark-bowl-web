@@ -13,6 +13,9 @@ Stuff we use:
 
 ## Install
 
+#### Install dependencies
+`docker-compose run composer install`
+
 ### Change the host file on your computer
 
 The host file path is:
