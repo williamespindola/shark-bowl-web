@@ -33,3 +33,10 @@ services:
         ports:
             - 27017:27017
         command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+    composer:
+        restart: 'no'
+        image: composer/composer:php7
+        volumes:
+            - .:/src
+        working_dir: /src

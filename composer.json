@@ -1,0 +1,17 @@
+{
+    "name": "williamespindola/shark-bowl-web",
+    "description": "Shark Bowl Web App to help the group dynamic on PHPSP Meetup's",
+    "authors": [
+        {
+            "name": "Maicon Gouveia",
+            "email": "gouveia.maicon@gmail.com"
+        },
+        {
+            "name": "Luiz Felipe Limeira",
+            "email": "lflimeira02@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "7.1.0"
+    }
+}
